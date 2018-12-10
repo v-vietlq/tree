@@ -171,6 +171,6 @@ bool BST::isBST(Node* &Root,Node* left,Node* right)
 	return isBST(Root->left, left, Root) && isBST(Root->right, Root, right);
 }
 bool BST::isBST()
-{
+{  
 	return isBST(Root, NULL, NULL);
 }

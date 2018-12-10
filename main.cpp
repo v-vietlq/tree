@@ -1,20 +1,23 @@
-#include "BinaryTree.h"
+#include "AVL.h"
 int main()
 {
-	BST T;
+	AVL T;
+	T.Insert(2);
 	T.Insert(3);
 	T.Insert(4);
-	T.Insert(1);
-	T.Insert(2);
 	T.Insert(5);
-	T.Insert(0);
-	T.Insert(6);
-	T.LRN();
-	cout << "\n";
-	T.Remove(8);
+	T.Insert(23);
+	T.Insert(4);
+	T.Insert(24);
+	T.Insert(34);
+	T.Insert(12);
+	T.Insert(16);
+	T.Insert(22);
 	T.LNR();
-	if (T.isBST()) cout << "\nTree is a Binary search tree\n";
-	else cout << "\nTree is not a Binary search tree\n";
+	cout << "\n";
+	T.Remove(3);
+	T.LRN();
+
 	system("pause");
-	return 0;
+
 }
